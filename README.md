@@ -30,3 +30,5 @@ timetableprice( ***cnr_int, hnr:int, sernr: int***, **row:int, seat:int**, price
 tickets( ***cnr:int, hnr:int, sernr:int***, *row:int, seat:int*)
 
 pricestandard( **cnr:int, hnr:int, row:int, seat:int**, price double;
+
+![IMAGE](20200213_150450.jpg)
