@@ -10,3 +10,23 @@ The analogous statements should also be possible for directors, whereby it can b
 The other data of a film include: Title, type (thriller, western, youth film, ... ), year of production, country, language, duration, distribution, etc.
 
 Create a ERD and a Relation Model for this example
+
+Cinema( **CNR: int**, name: varchar(30), address: varchar(30));</p>
+halls( **CNR: int, HNR: int** );</p>
+films( **FNR: int**, nam: varchar(30), *ftnr: int*, dnr: int );</p>
+filmtype( **FTNR: int**, name: varchar(30));</p>
+
+filmactor(***fnr:int,anr:int***) </p>
+actors( **ANR: int**, name: varchar(30), ...);
+
+director( **DNR: int**, name: varchar, ...);
+
+seatingplan ( ***CNR: int, HNR: int, row: int, seatnr: int*** );
+
+timetable( ***cnr:int, hnr:int***, **sernr: int**, fnr:int, date:date, startingtime: time)
+
+timetableprice( ***cnr_int, hnr:int, sernr: int***, **row:int, seat:int**, price: double) </p>
+
+tickets( ***cnr:int, hnr:int, sernr:int***, *row:int, seat:int*)
+
+pricestandard( **cnr:int, hnr:int, row:int, seat:int**, price double;
